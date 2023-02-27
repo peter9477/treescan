@@ -1,0 +1,13 @@
+[build]
+target = "arm-unknown-linux-gnueabihf"
+target-dir = "/tmp/target"
+
+[profile.release]
+incremental = true
+
+[net]
+git-fetch-with-cli = true
+
+[target.arm-unknown-linux-gnueabihf]
+linker = "arm-linux-gnueabihf-gcc"
+
